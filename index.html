@@ -1,0 +1,285 @@
+Html: <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summit Front-End 2026 - Landing Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header class="site-header border-bottom sticky-top bg-white">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#topo">Summit Front-End</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false" aria-label="Alternar navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menu-principal">
+                    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+                        <li class="nav-item"><a href="#agenda" class="nav-link">Agenda</a></li>
+                        <li class="nav-item"><a href="#palestrantes" class="nav-link">Palestrantes</a></li>
+                        <li class="nav-item"><a href="#ingressos" class="nav-link">Ingressos</a></li>
+                        <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+                        <li class="nav-item"><a href="#contato" class="btn btn-dark text-white">Quero participar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="topo">
+        <section id="inicio" class="hero-section py-5">
+            <div class="container py-4 py-lg-5">
+                <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                        <span class="badge text-bg-warning rounded-pill mb-3">Evento presencial e online</span>
+                        <h1 class="display-4 fw-bold mb-3">Construa interfaces de alto impacto com HTML5, CSS3 e JavaScript</h1>
+                        <p class="h5 text-secondary mb-4">3 dias de talks, workshops e desafios para elevar seu nível</p>
+                        <p class="lead mb-4">Participe do maior encontro para quem cria produtos digitais no Brasil. Conteúdo técnico com foco em experiência do usuário, performance e acessibilidade.</p>
+                        <div class="hero-actions d-flex gap-3 flex-wrap">
+                            <a href="#ingressos" class="btn btn-dark btn-lg">Ver lotes</a>
+                            <a href="#agenda" class="btn btn-outline-dark btn-lg">Explorar trilhas</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                        <aside class="hero-card p-4 shadow-sm">
+                            <p class="text-uppercase fw-semibold small mb-2">Próxima edição</p>
+                            <ul class="list-unstyled mb-0">
+                                <li class="mb-2"><strong>Data:</strong> 20 a 22 de julho de 2026</li>
+                                <li class="mb-2"><strong>Local:</strong> Centro de Convenções Recife</li>
+                                <li class="mb-2"><strong>Formato:</strong> presencial + transmissão</li>
+                                <li><strong>Público:</strong> iniciantes e profissionais</li>
+                            </ul>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agenda" class="py-5 section-muted">
+            <div class="container">
+                <div class="section-header text-center mb-5">
+                    <p class="section-kicker">Programação principal</p>
+                    <h2 class="display-6 fw-bold">Trilhas para produto, engenharia e design</h2>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <article class="session-card h-100 p-4">
+                            <h3 class="h4">Dia 1 - Fundamentos modernos</h3>
+                            <p>Semântica, acessibilidade real, arquitetura de CSS e estrutura escalável para aplicações.</p>
+                            <button class="btn btn-sm btn-outline-dark" data-track="agenda" data-session-id="1">Salvar sessão</button>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="session-card h-100 p-4">
+                            <h3 class="h4">Dia 2 - Frameworks e ecossistema</h3>
+                            <p>Como aplicar padrões com Bootstrap sem sacrificar usabilidade e identidade visual.</p>
+                            <button class="btn btn-sm btn-outline-dark" data-track="agenda" data-session-id="2">Salvar sessão</button>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="session-card h-100 p-4">
+                            <h3 class="h4">Dia 3 - Performance na prática</h3>
+                            <p>Métricas, otimização de assets, carregamento progressivo e JavaScript orientado a UX.</p>
+                            <button class="btn btn-sm btn-outline-dark" data-track="agenda" data-session-id="3">Salvar sessão</button>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="palestrantes" class="py-5">
+            <div class="container">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5">
+                        <p class="section-kicker">Especialistas confirmados</p>
+                        <h2 class="display-6 fw-bold mb-3">Pessoas que estão moldando produtos digitais</h2>
+                        <p class="mb-0">Conheça profissionais de empresas nacionais e internacionais compartilhando desafios reais de desenvolvimento front-end.</p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <div class="speaker-card p-3 h-100">
+                                    <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded mb-3" alt="Foto de Camila Torres">
+                                    <h3 class="h5 mb-1">Camila Torres</h3>
+                                    <p class="small text-muted mb-0">Staff Engineer - Nubank</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="speaker-card p-3 h-100">
+                                    <img src="./imagens/programador-qual-tipo-de-empresa-abrir.jpeg" class="img-fluid rounded mb-3" alt="Foto de Eduardo Silva">
+                                    <h3 class="h5 mb-1">Eduardo Silva</h3>
+                                    <p class="small text-muted mb-0">Senior Front-End - Mercado Livre</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="speaker-card p-3 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=800&q=60" class="img-fluid rounded mb-3" alt="Foto de Jéssica Alves">
+                                    <h3 class="h5 mb-1">Jéssica Alves</h3>
+                                    <p class="small text-muted mb-0">Design Systems Lead - iFood</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="speaker-card p-3 h-100">
+                                    <img src="./imagens/images.jpg" class="img-fluid rounded mb-3" alt="Foto de Diego Martins">
+                                    <h3 class="h5 mb-1">Diego Martins</h3>
+                                    <p class="small text-muted mb-0">Principal Engineer - VTEX</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ingressos" class="py-5 section-accent text-light">
+            <div class="container">
+                <div class="text-center mb-5">
+                    <p class="section-kicker text-warning">Lotes limitados</p>
+                    <h2 class="display-6 fw-bold">Escolha seu ingresso</h2>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <article class="ticket-card p-4 h-100">
+                            <h3 class="h4">Starter</h3>
+                            <p class="ticket-price">R$ 199</p>
+                            <ul>
+                                <li>Acesso a todas as palestras</li>
+                                <li>Comunidade no Discord</li>
+                                <li>Certificado digital</li>
+                            </ul>
+                            <a class="btn btn-outline-light w-100" href="#contato">Selecionar plano</a>
+                        </article>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <article class="ticket-card p-4 h-100 highlight">
+                            <h3 class="h4">Pro</h3>
+                            <p class="ticket-price">R$ 349</p>
+                            <ul>
+                                <li>Tudo do Starter</li>
+                                <li>2 workshops práticos</li>
+                                <li>Mentoria em grupo</li>
+                            </ul>
+                            <a class="btn btn-warning w-100 text-dark" href="#contato">Selecionar plano</a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="py-5">
+            <div class="container">
+                <div class="row g-4 align-items-start">
+                    <div class="col-lg-4">
+                        <h2 class="display-6 fw-bold">Dúvidas frequentes</h2>
+                        <p class="text-muted">As respostas abaixo ajudam a planejar sua participação no evento.</p>
+                    </div>
+
+                    <div class="col-lg-8">
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="q1">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#a1" aria-expanded="true" aria-controls="a1">
+                                        O evento é para iniciantes?
+                                    </button>
+                                </h3>
+                                <div id="a1" class="accordion-collapse collapse show" aria-labelledby="q1" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Sim, teremos trilhas básicas e avançadas para diferentes níveis.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="q2">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#a2" aria-expanded="false" aria-controls="a2">
+                                        Vou receber gravações?
+                                    </button>
+                                </h3>
+                                <div id="a2" class="accordion-collapse collapse" aria-labelledby="q2" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Quem adquirir ingresso Pro terá acesso às gravações por 6 meses.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="py-5 section-muted">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="contact-box p-4 p-lg-5">
+                            <div class="text-center mb-4">
+                                <p class="section-kicker">Inscrição</p>
+                                <h2 class="display-6 fw-bold">Reserve seu lugar</h2>
+                                <p class="mb-0">Preencha os dados para entrar na lista de confirmação.</p>
+                            </div>
+
+                            <form id="form-inscricao" class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label">Nome completo</label>
+                                    <input id="nome" class="form-control" type="text" placeholder="Digite seu nome">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input id="email" class="form-control" type="email" placeholder="voce@empresa.com">
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label for="momento-carreira" class="form-label">Seu momento de carreira</label>
+                                    <select id="momento-carreira" class="form-select">
+                                        <option value="" selected>Selecione</option>
+                                        <option value="junior">Júnior</option>
+                                        <option value="pleno">Pleno</option>
+                                        <option value="senior">Sênior</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="form-label" for="ingresso-select">Tipo de ingresso</label>
+                                    <select id="ingresso-select" class="form-select">
+                                        <option value="" selected>Escolha o ingresso</option>
+                                        <option value="starter">Starter</option>
+                                        <option value="pro">Pro</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input type="checkbox" id="terms" class="form-check-input">
+                                        <label for="terms" class="form-check-label">
+                                            Eu concordo com os termos de uso e política de privacidade
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 d-grid">
+                                    <button type="submit" id="btn-enviar" class="btn btn-dark btn-lg">Enviar inscrição</button>
+                                </div>
+                            </form>
+
+                            <div id="mensagemRetorno" class="alert mt-4" role="alert"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-4 border-top">
+        <div class="container d-flex flex-column flex-md-row gap-2 justify-content-between align-items-md-center">
+            <p class="mb-0">Summit Front-End 2026. Todos os direitos reservados.</p>
+            <a href="#topo" class="text-reset">Voltar ao topo</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html> 
